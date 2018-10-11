@@ -1,0 +1,16 @@
+{
+  "name": "hopverkefni1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-watch": "node-sass --source-map-embed --watch styles.scss styles.css",
+    "browser-sync": "browser-sync start --server --files index.html styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.0",
+    "node-sass": "^4.9.3"
+  }
+}
