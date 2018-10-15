@@ -1,4 +1,4 @@
-Vörur í körfu
+﻿Vörur í körfu
 
 Ótrúlegt úr
 Hvað er klukkan? Þetta úr mun svara því hvenær sem er.
