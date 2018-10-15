@@ -10,7 +10,9 @@
   </head>
   <body>
     <header>
-      <h1>Vöruhúsið</h1>
+      <div class="header__title">
+        <h1>Vöruhúsið</h1>
+      </div>
       <div class="header__sites">
         <h3><a href="index.html">FORSÍÐA</a></h3>
         <h3><a href="pages/products">VÖRUR</a></h3>
@@ -22,26 +24,29 @@
     </header>
 
     <main>
-      <div>
-        <div>
-          <h2>Allar vörurnar</h2>
-          <p>Vöruhúsið hefur allar þær vörur sem þig vantar.</p>
-          <input type="submit" value="Skoða vörur">
-        </div>
-        <div>
-          <img scr="img/products.jpg" alt="Hjá vöruhúsinu er allt til">
+      <div class ="cards">
+        <div class="card">
+          <div class="card__content">
+            <h2>Allar vörurnar</h2>
+            <p>Vöruhúsið hefur allar þær vörur sem þig vantar.</p>
+            <input type="submit" value="Skoða vörur">
+          </div>
+          <div class="card__image">
+            <img scr="img/products.jpg" alt="Hjá vöruhúsinu er allt til">
+          </div>
         </div>
       </div>
 
-      <div>
-        <div>
-          <h2>Besta starfsfólkið</h2>
-          <p>Starfsfólkið okkar hugsar vel um þig.</p>
-          <input type="submit" value="Kynnast starfsfólki">
-        </div>
-        <div>
-          <img scr="img/team.jpg" alt="Mynd ad höndum teymisins">
-        </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card__content">
+            <h2>Besta starfsfólkið</h2>
+            <p>Starfsfólkið okkar hugsar vel um þig.</p>
+            <input type="submit" value="Kynnast starfsfólki">
+          </div>
+          <div class="card__image">
+            <img scr="img/team.jpg" alt="Mynd ad höndum teymisins">
+          </div>
       </div>
 
       <footer>
