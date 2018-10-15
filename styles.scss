@@ -17,9 +17,25 @@ html { /* stylelint-disable-line */
 
   // TODO fleiri grunn stillingar
 }
+header{
+  background-color: #afb281;
+}
+.header__title{
+  display: flex;
+  justify-content: center;
+}
+.header__sites{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
+
 
 
 
 // TODO sækja allar sass skrár
 @import "scss/index.scss";
 @import "scss/karfa.scss";
+@import "scss/products.scss"
