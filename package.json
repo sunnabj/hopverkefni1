@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "sass-watch": "node-sass --source-map-embed --watch styles.scss styles.css",
-    "browser-sync": "browser-sync start --server --files index.html styles.css"
+    "browser-sync": "browser-sync start --server --files index.html styles.css",
+    "npm-run-all": "npm-run-all --parallel sass browser-sync"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "browser-sync": "^2.26.0",
     "node-sass": "^4.9.4"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.3"
   }
 }
