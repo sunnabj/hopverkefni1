@@ -3,12 +3,14 @@ main {
     max-width: 1200px;
     padding-left: 20px;
     padding-right: 20px;
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: $font-main;
+    /*font-family: "Open Sans", Arial, sans-serif;*/
     font-size: 16px;
 }
 
 h1 {
-  font-family: 'Oswald', Verdana, serif;
+  /*font-family: 'Oswald', Verdana, serif;*/
+  font-family: $font-heading;
   font-size: 2.5em;
 }
 
@@ -16,7 +18,7 @@ h1 {
 /*Setja h1 og main beint inn í styles.scss?*/
 
 h2 {
-  font-family: 'Oswald', Verdana, serif;
+  font-family: $font-heading;
   font-weight: bold;
 }
 
@@ -37,7 +39,7 @@ h2 {
     margin-right: -10px;
     margin-bottom: 40px;
     margin-top: 40px;
-  }
+}
 
 .cart__col {
   width: 100%;
@@ -77,23 +79,22 @@ h2 {
 .form__button {
     margin-right: 5px;
     margin-left: 5px;
-    background-color: #ffffff;
-    color: #000000;
-    border: solid 1px #afb281;
+    background-color: $color-2;
+    color: $color-1;
+    border: solid 1px $color-3;
     border-radius: 2px;
-    transition: background-color 300ms ease-in-out;
+    transition: background-color $transition;
     height: 100%;
     width: 120px;
 }
 
 .form__button:hover {
-    background-color: #cc9694;
-    border-color: #cc9694;
+    background-color: $color-6;
+    border-color: $color-6;
 }
 
 .cart__form2 {
     display: flex;
-    /*flex-direction: column;*/
     flex-direction: row;
     justify-content: space-between;
 }
@@ -108,7 +109,8 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 75%
+    /*width: 75%;*/
+    @include columns(8);
 }
 
 .choose__information {
@@ -128,22 +130,22 @@ h2 {
 }
 .buybutton__button {
     border-style: solid;
-    border-color: #cc9694;
+    border-color: $color-6;
     border-width: 5px;
     /*border-right-width: 60px;
     border-left-width: 60px;*/
     width: 250px;
     border-radius: 4px;
-    background-color:#cc9694;
-    color: #000000;
-    transition: background-color 300ms ease-in-out, border-color 300ms ease-in-out;
+    background-color:$color-6;
+    color: $color-1;
+    transition: background-color $transition, border-color $transition;
 }
 
 
 .buybutton__button:hover {
-    color: #cc9694;
-    border-color: #000000;
-    background-color: #000000;
+    color: $color-6;
+    border-color: $color-1;
+    background-color: $color-1;
 }
 
   @media (max-width: 749px) {
@@ -184,7 +186,8 @@ h2 {
         width: 100%;
     }
     .form__text {
-        width: 33.33333%;
+        /*width: 33.33333%;*/
+        @include columns(4);
     }
 
     .form2__choose {
@@ -201,8 +204,12 @@ h2 {
     .cart__row2 {
         flex-direction: row;
     }
+    .cart__col2 {
+        @include columns(6);
+    }
     .cart__image {
-        width: 50%;
+        /*width: 50%;*/
+        @include columns(6);
     }
     .image__image {
         max-width: 100%;
@@ -212,12 +219,9 @@ h2 {
 
   @media (min-width: 1200px) {
     .cart__col2 {
-        max-width: 33.33333%;
+        @include columns(4);
     }
     .cart__row2 {
         padding-left: 200px;
     }
   }
-
-
-  /*Hafa mismunandi div á col fyrir ofan og neðan?*/
