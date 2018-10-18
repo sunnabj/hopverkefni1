@@ -12,6 +12,7 @@ h1 {
   font-size: 2.5em;
 }
 
+
 /*Setja h1 og main beint inn í styles.scss?*/
 
 h2 {
@@ -19,7 +20,7 @@ h2 {
   font-weight: bold;
 }
 
-.grid__row {
+.cart__row {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -28,7 +29,7 @@ h2 {
   margin-bottom: 40px;
   margin-top: 40px;
 }
-.grid__row2 {
+.cart__row2 {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -38,7 +39,7 @@ h2 {
     margin-top: 40px;
   }
 
-.grid__col {
+.cart__col {
   width: 100%;
   padding-right: 10px;
   padding-left: 10px;
@@ -46,7 +47,7 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
 }
-.grid__col2 {
+.cart__col2 {
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
@@ -55,7 +56,7 @@ h2 {
     justify-content: space-between;
   }
 
-.grid__image {
+.cart__image {
   padding-right: 10px;
   padding-left: 10px;
   max-width: 100%;
@@ -64,7 +65,7 @@ h2 {
   max-width: 100%;
 }
 
-.grid__form {
+.cart__form {
     display: flex;
     flex-direction: row;
     height: 30px;
@@ -90,7 +91,7 @@ h2 {
     border-color: #cc9694;
 }
 
-.grid__form2 {
+.cart__form2 {
     display: flex;
     /*flex-direction: column;*/
     flex-direction: row;
@@ -151,33 +152,33 @@ h2 {
         padding: 10px;
     }
 
-    .grid__row {
+    .cart__row {
         margin-left: 0px;
         margin-right: 0px;
         padding-left: 0px;
         padding-right: 0px;
         width: 100%;
     }
-    .grid__row2 {
+    .cart__row2 {
         margin-left: 0px;
         margin-right: 0px;
         padding-left: 0px;
         padding-right: 0px;
         width: 100%;
     }
-    .grid__image {
+    .cart__image {
         margin-left: 0px;
         margin-right: 0px;
         padding-right: 0px;
         padding-left: 0px;
         width: 100%
     }
-    .grid__col {
+    .cart__col {
         padding: 0px;
         margin: 0px;
         width: 100%;
     }
-    .grid__col2 {
+    .cart__col2 {
         padding: 0px;
         margin: 0px;
         width: 100%;
@@ -194,13 +195,13 @@ h2 {
 
   @media (min-width: 750px) {
     
-    .grid__row {
+    .cart__row {
         flex-direction: row;
     }
-    .grid__row2 {
+    .cart__row2 {
         flex-direction: row;
     }
-    .grid__image {
+    .cart__image {
         width: 50%;
     }
     .image__image {
@@ -210,10 +211,10 @@ h2 {
   }
 
   @media (min-width: 1200px) {
-    .grid__col2 {
+    .cart__col2 {
         max-width: 33.33333%;
     }
-    .grid__row2 {
+    .cart__row2 {
         padding-left: 200px;
     }
   }
