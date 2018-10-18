@@ -1,1 +1,38 @@
 // TODO stillingar hér
+$max-width: 1200px;
+$gutter: 20px;
+
+$color-1: #000000;
+$color-2: #ffffff;
+$color-3: #afb281;
+$color-4: #cee8ff;
+$color-5: #fcffd2;
+$color-6: #cc9694;
+
+$font-main: 'Open Sans', Helvetica, Arial, Sans-serif;
+$font-heading: 'Oswald', Verdana, Serif;
+
+// Leturstærðir
+// 12 14 16 18 21 24 36 48 60
+
+$transition: 300ms ease-in-out;
+
+
+
+
+@mixin row() {
+    display: flex;
+}
+
+@mixin columns() {
+    //margföldum með 1% til að breyta gildi í % gildi
+    width: ($col /12 * 100)*1%;
+
+    padding-right: $gutter/2;
+    padding-left: $gutter/2;
+
+}
+
+@mixin offset-left($cols: 0){
+    margin-left: ($cols/12 *100)*1%;
+}

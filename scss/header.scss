@@ -1,0 +1,34 @@
+
+  header{
+    background-color: #afb281;
+    font-family: 'Oswald', Verdana, serif;
+  }
+  .header__title{
+    display: flex;
+    justify-content: center;
+  }
+  .header__sites{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+
+  }
+  .header__cart{
+    display: flex;
+    justify-content: center;
+
+    a{
+        color: black;
+    text-decoration: none;
+    }
+  }
+  
+  
