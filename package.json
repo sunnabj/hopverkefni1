@@ -6,7 +6,7 @@
   "scripts": {
     "sass-watch": "node-sass --source-map-embed --watch styles.scss styles.css",
     "browser-sync": "browser-sync start --server --files index.html styles.css",
-    "npm-run-all": "npm-run-all --parallel sass browser-sync"
+    "dev": "npm-run-all --parallel sass-watch browser-sync"
   },
   "author": "",
   "license": "ISC",
