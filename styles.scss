@@ -38,10 +38,15 @@ main {
 h1 {
   /*font-family: 'Oswald', Verdana, serif;*/
   font-family: $font-heading;
-  font-size: 2.5em;
+  font-size: 3em;
 }
 
 h2 {
   font-family: $font-heading;
   font-weight: bold;
+  font-size: 2.5em;
+}
+h3 {
+  font-family: $font-heading;
+  font-size: 2em;
 }
