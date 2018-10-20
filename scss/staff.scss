@@ -20,6 +20,10 @@ h2 {
     font-family: $font-heading;
     font-weight: bold;
 }
+.stcards {
+    display: flex;
+    flex-direction: column;
+}
 
 .stcards__row {
     display: flex;
@@ -30,24 +34,25 @@ h2 {
     }
 }
 .stcards__col {
-
+    padding: 0px;
     @include columns(12);
 
     @media (min-width: 750px) {
         @include columns(6);
     }    
 }
-/*Mætti prófa að setja mismunandi div á efri tvær og neðri tvær myndir*/
+
 .stcard {
     transform-style: preserve-3d; /* stackast í þrívídd */
     transition: $transition;
+    position: relative;
+    width: 100%;
 }
 .stcards__col:hover .stcard {
     transform: rotateY(180deg);
 }
 .face {
-    /*width: 100%;
-    height: 100%;*/
+    width: 100%;
     backface-visibility: hidden; /* ekki sýna það sem er á bakvið */
 }
 
