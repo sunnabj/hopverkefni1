@@ -24,16 +24,29 @@
     color: $color-6;
 }
 @media(min-width: 501px){
+  
+    }
+    .index__cards{
+       flex-wrap: wrap;
+
+        .index__card:nth-of-type(2){
+            .index__content{
+                order: 1;
+            }
+        }
+    
+    }
     .index__card{
         display: flex;
-        flex-direction: row;
+        flex-direction: row; 
+        
+        @include columns (12);
     }
-
     .index__content{
-        @include columns (6);
+        @include columns(6);
     }
-    .index__content:nth-child(2){
-        order: 1;
+    .index__image{
+        @include columns(6);
     }
-}
 
+    
