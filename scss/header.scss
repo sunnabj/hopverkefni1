@@ -1,34 +1,49 @@
+@import "config";
 
   header{
-    background-color: #afb281;
-    font-family: 'Oswald', Verdana, serif;
+    background-color: $color-3;
   }
   .header__title{
     display: flex;
     justify-content: center;
+    font-family: 'Oswald', Verdana, serif;
+    margin-bottom: 20px;
+  }
+  .header__content{
+      display: flex;
+      font-family: 'Open sans', Helvetica, Arial, sans-serif;
+      justify-content: center;
+      flex-direction: column;
+      
+      
+      a{
+        color: black;
+        text-decoration: none;
+
+      &:hover{
+        color: $color-2;
+      }
+    }
   }
   .header__sites{
     text-transform: uppercase;
     display: flex;
     justify-content: space-around;
-    max-width: 500px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-bottom: 10px;
 
     a{
-        color: black;
-        text-decoration: none;
+      font-weight: bold;
     }
+       
 
   }
   .header__cart{
     display: flex;
     justify-content: center;
 
-    a{
-        color: black;
-    text-decoration: none;
     }
   }
+  
+  
   
   
