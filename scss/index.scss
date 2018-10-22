@@ -1,1 +1,39 @@
-// TODO stillingar hér
+@import "config";
+
+.index__cards{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.index__button {
+    background-color: $color-6;
+    color: $color-1;
+    border: solid 1px $color-6;
+    border-radius: 2px;
+    transition: background-color $transition;
+    height: 30px;
+    width: 120px;
+    font-size: 12px;
+
+    @include columns(8);
+}
+
+.index__button:hover {
+    background-color: $color-1;
+    border-color: $color-1;
+    color: $color-6;
+}
+@media(min-width: 501px){
+    .index__card{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .index__content{
+        @include columns (6);
+    }
+    .index__content:nth-child(2){
+        order: 1;
+    }
+}
+
