@@ -1,0 +1,14 @@
+@import "config";
+
+footer{
+    background-color: $color-6;
+}
+.footer__list{
+    a{
+        color: $color-2;
+        
+        &:hover{
+            color: $color-1;
+        }
+    }
+}

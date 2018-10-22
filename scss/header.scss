@@ -17,7 +17,7 @@
       
       
       a{
-        color: black;
+        color: $color-1;
         text-decoration: none;
 
       &:hover{
@@ -31,6 +31,7 @@
     justify-content: space-around;
     margin-bottom: 10px;
 
+
     a{
       font-weight: bold;
     }
@@ -40,8 +41,21 @@
   .header__cart{
     display: flex;
     justify-content: center;
-
+  }
+  @media(min-width: 500px){
+    .header__content{ 
+      flex-direction: row;
     }
+    .header__sites{
+     flex-direction: center;
+     max-width: 300px;
+     flex-grow: 1;
+      
+    }
+    .header__cart{
+      justify-content: flex-end;
+    }
+
   }
   
   
