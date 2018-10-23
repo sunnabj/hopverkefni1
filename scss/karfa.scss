@@ -1,20 +1,16 @@
 @import "config.scss";
 
 .cart__row {
-  display: flex;
+  @include row();
   flex-direction: column;
   width: 100%;
-  margin-left: -10px;
-  margin-right: -10px;
   margin-bottom: 40px;
   margin-top: 40px;
 }
 .cart__row2 {
-    display: flex;
+    @include row();
     flex-direction: column;
     width: 100%;
-    margin-left: -10px;
-    margin-right: -10px;
     margin-bottom: 40px;
     margin-top: 40px;
 }
@@ -64,11 +60,11 @@
     transition: background-color $transition;
     height: 100%;
     width: 120px;
-}
 
-.form__button:hover {
-    background-color: $color-6;
-    border-color: $color-6;
+    &:hover {
+      background-color: $color-6;
+      border-color: $color-6; 
+    }
 }
 
 .cart__form2 {
@@ -117,19 +113,20 @@
     background-color:$color-6;
     color: $color-1;
     transition: background-color $transition, border-color $transition;
+
+    &:hover {
+      color: $color-6;
+      border-color: $color-1;
+      background-color: $color-1;  
+    }
 }
 
-.buybutton__button:hover {
-    color: $color-6;
-    border-color: $color-1;
-    background-color: $color-1;
-}
 
   @media (max-width: 749px) {
     
-    main {
+    /*main {
         padding: 10px;
-    }
+    }*/
 
     .cart__row {
         margin-left: 0px;
