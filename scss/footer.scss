@@ -1,0 +1,43 @@
+@import "config";
+
+footer{
+    background-color: $color-6;
+    font-family: 'Open sans', Helvetica, Arial, sans-serif;
+    
+}
+.footer__content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer__col{
+    display: flex;
+    flex-direction: column;
+    @include columns(6);
+    margin-bottom: 10px;
+    margin-top: 10px;
+  
+}
+@media(min-width: 1000px){
+    .footer__col{
+        @include columns(3);
+    }
+}
+
+.footer__list{   
+    list-style: none;
+    a{
+        color: $color-2;
+        text-decoration: none;
+        
+        &:hover{
+            color: $color-1;
+        }
+    }    
+}
+
+.footer__copyright{
+    display: flex;
+    justify-content: center;
+}

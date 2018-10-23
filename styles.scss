@@ -5,6 +5,8 @@
 @import "scss/products.scss";
 @import "scss/config";
 @import "scss/header.scss";
+@import "scss/staff.scss";
+@import "scss/footer.scss";
 
 * {
   padding: 0;
@@ -21,4 +23,31 @@ html { /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
   // TODO fleiri grunn stillingar
+
+}
+
+main {
+  margin: 0 auto;
+  max-width: $max-width;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: $font-main;
+  /*font-family: "Open Sans", Arial, sans-serif;*/
+  font-size: 16px;
+}
+
+h1 {
+  /*font-family: 'Oswald', Verdana, serif;*/
+  font-family: $font-heading;
+  font-size: 3em;
+}
+
+h2 {
+  font-family: $font-heading;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+h3 {
+  font-family: $font-heading;
+  font-size: 2em;
 }

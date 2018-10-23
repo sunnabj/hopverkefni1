@@ -16,13 +16,15 @@
       <div class="header__title">
         <h1>Vöruhúsið</h1>
       </div>
-      <div class="header__sites">
-        <h3><a href="index.html">Forsíða</a></h3>
-        <h3><a href="pages/products.html">Vörur</a></h3>
-        <h3><a href="pages/staff.html">Starfsfólk</a></h3>
-      </div>
-      <div class="header__cart">
-        <h4><a href="pages/cart.html">Karfa (3)</a></h4>
+      <div class="header__content">
+        <div class="header__sites">
+          <p><a href="index.html">Forsíða</a></p>
+          <p><a href="pages/products.html">Vörur</a></p>
+          <p><a href="pages/staff.html">Starfsfólk</a></p>
+        </div>
+        <div class="header__cart">
+          <p><a href="pages/cart.html"> &#x1F6D2 Karfa (3)</a></p>
+        </div>
       </div>
     </header>
 
@@ -32,75 +34,83 @@
           <div class="index__content">
             <h2>Allar vörurnar</h2>
             <p>Vöruhúsið hefur allar þær vörur sem þig vantar.</p>
-            <input type="submit" class="index__input" value="Skoða vörur">
+            <a href="pages/products.html">
+              <input type="submit" class="index__button" value="Skoða vörur">
+            </a>
           </div>
-          <div class="card__image">
-            <img scr="img/products.jpg" alt="Hjá vöruhúsinu er allt til">
+          <div class="index__image">
+            <img class="index__img" src="/img/products.jpg" alt="Hjá vöruhúsinu er allt til">
           </div>
         </div>
-      </div>
-
-      <div class="index__cards">
+              
         <div class="index__card">
           <div class="index__content">
             <h2>Besta starfsfólkið</h2>
             <p>Starfsfólkið okkar hugsar vel um þig.</p>
-            <input type="submit" value="Kynnast starfsfólki">
+            <a href="pages/staff.html">
+              <input type="submit" class="index__button" value="Kynnast starfsfólki">
+            </a>
           </div>
-          <div class="index__card__image">
-            <img scr="img/team.jpg" alt="Mynd ad höndum teymisins">
+          <div class="index__image">
+            <img class="index__img" src="/img/team.jpg" alt="Mynd af höndum teymisins">
           </div>
         </div>
       </div>
-
-      <footer>
-        <div>
-          <h3>Vöruflokkar</h3>
-          <ul>
-            <li>Nauðsynjavörur</li>
-            <li>Frábærar vörur</li>
-            <li>Ómissandi vörur</li>
-            <li>Ótrúlegar vörur</li>
-            <li>Magnaðar vörur</li>
-            <li>Muna ad eyda þessu</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Vöruflokkar</h3>
-          <ul>
-            <li>Trylltar vörur</li>
-            <li>Geggjaðar vörur</li>
-            <li>Svakalegar vörur</li>
-            <li>Fáránlegar vörur</li>
-            <li>Klikkaðar vörur</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Vöruflokkar</h3>
-          <ul>
-            <li>Nýjar vörur</li>
-            <li>Gamlar vörur</li>
-            <li>Skrítnar vörur</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Síður</h3>
-          <ul>
-            <li><a href="pages/products.html">Allar vörur</a></li>
-            <li><a href="pages/staff.html">Starfsfólk</a></li>
-            <li><a href="pages/cart.html">Karfa</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <p>© 2018 Vöruhúsið</p>
-        </div>
-
-
-      </footer>
-
     </main>
+    <footer>
+      <div class="footer__content">
+        <div class="footer__col">
+          <div class="footer__title">
+            <h3>Vöruflokkar</h3>
+          </div>
+            <ul class="footer__list">
+              <li><a href="pages/products.html">Nauðsynjavörur</a></li>
+              <li><a href="pages/products.html">Frábærar vörur</a></li>
+              <li><a href="pages/products.html">Ómissandi vörur</a></li>
+              <li><a href="pages/products.html">Ótrúlegar vörur</a></li>
+              <li><a href="pages/products.html">Magnaðar vörur</a></li>
+            </ul>
+        </div>
+        <div class="footer__col">
+          <div class="footer__title">
+            <h3>Vöruflokkar</h3>
+          </div>
+            <ul class="footer__list">
+              <li><a href="pages/products.html">Trylltar vörur</a></li>
+              <li><a href="pages/products.html">Geggjaðar vörur</a></li>
+              <li><a href="pages/products.html">Svakalegar vörur</a></li>
+              <li><a href="pages/products.html">Fáránlegar vörur</a></li>
+              <li><a href="pages/products.html">Klikkaðar vörur</a></li>
+            </ul>
+        </div>
+        <div class="footer__col">
+          <div class="footer__title">
+            <h3>Vöruflokkar</h3>
+          </div>
+            <ul class="footer__list">
+              <li><a href="pages/products.html">Nýjar vörur</a></li>
+              <li><a href="pages/products.html">Gamlar vörur</a></li>
+              <li><a href="pages/products.html">Skrítnar vörur</a></li>
+            </ul>
+        </div>
+        <div class="footer__col">
+          <div class="footer__title">
+            <h3>Síður</h3>
+          </div>
+            <ul  class="footer__list">
+              <li><a href="pages/products.html">Allar vörur</a></li>
+              <li><a href="pages/staff.html">Starfsfólk</a></li>
+              <li><a href="pages/cart.html">Karfa</a></li>
+            </ul>
+        </div>
+    </div>
 
+      <div class="footer__copyright">
+        <p>© 2018 Vöruhúsið</p>
+      </div>
+
+
+    </footer>
   </body>
 </html>
 

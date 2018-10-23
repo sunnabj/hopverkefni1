@@ -1,22 +1,65 @@
+@import "config";
 
   header{
-    background-color: #afb281;
-    font-family: 'Oswald', Verdana, serif;
+    background-color: $color-3;
   }
   .header__title{
     display: flex;
     justify-content: center;
+    font-family: 'Oswald', Verdana, serif;
+    margin-bottom: 20px;
+  }
+  .header__content{
+    display: flex;
+    font-family: 'Open sans', Helvetica, Arial, sans-serif;
+    justify-content: center;
+    flex-direction: column;
+    @include columns (12);
+    padding-bottom: 20px;
+      
+      
+      
+      a{
+        color: $color-1;
+        text-decoration: none;
+
+      &:hover{
+        color: $color-2;
+      }
+    }
   }
   .header__sites{
-    
-    color: black;
-    text-decoration: none;
     text-transform: uppercase;
     display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+
+
+    a{
+      font-weight: bold;
+    }
+       
+
   }
   .header__cart{
     display: flex;
     justify-content: center;
   }
+  @media(min-width: 501px){
+    .header__content{ 
+      flex-direction: row;
+      justify-content: flex-end;
+  
+    }
+    .header__sites{
+      max-width: 300px;
+      margin: auto;
+      display: flex;
+      flex: 1;
+    }
+
+  }
+  
+  
   
   

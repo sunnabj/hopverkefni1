@@ -1,0 +1,67 @@
+@import "config.scss";
+
+.stcards {
+    display: flex;
+    flex-direction: column;
+}
+
+.stcards__row {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+
+    @media (min-width: 750px) {
+        flex-direction: row;
+    }
+}
+.stcards__col {
+    @include columns(12);
+
+    @media (min-width: 750px) {
+        @include columns(6);
+    }    
+}
+
+.stcards__col:hover .stcard {
+    transform: rotateY(180deg);
+}
+
+.stcard {
+    transform-style: preserve-3d; /* stackast í þrívídd */
+    transition: $transition;
+    /*position: relative;*/
+    height: 100%;
+}
+
+.face {
+    /*height: 100%;*/
+    max-width: 100%;
+    backface-visibility: hidden; /* ekki sýna það sem er á bakvið */
+    position: relative;
+}
+.face.front {
+    /*height: 100%;*/
+    position: absolute;
+    height: 100%;
+}
+
+.face.back {
+    display: block;
+    transform: rotateY(180deg); /* sjáum ekki bakhliðina strax */
+    font-size: 46px; //Leturstærð stjórnar stærð á myndum.
+    /*position: relative;*/
+    /*position: absolute;*/
+  }
+
+
+.staff__image {
+    @include columns(12);
+    height: 100%;
+
+    @media (min-width: 750px) {
+        @include columns(12);
+        max-width: 100%;
+    }
+}
+
+

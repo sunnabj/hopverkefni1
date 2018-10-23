@@ -2,31 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Products</title>
+    <title>Cart</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="stylesheet" href="../grid.css">
     <link rel="stylesheet" href="../styles.css">
   </head>
   <body>
+    <header>
+      <div class="header__title">
+        <h1>Vöruhúsið</h1>
+      </div>
+      <div class="header__content">
+        <div class="header__sites">
+          <p><a href="index.html">Forsíða</a></p>
+          <p><a href="pages/products.html">Vörur</a></p>
+          <p><a href="pages/staff.html">Starfsfólk</a></p>
+        </div>
+        <div class="header__cart">
+          <p><a href="pages/cart.html"> &#x1F6D2 Karfa (3)</a></p>
+        </div>
+      </div>
+    </header>
     <main>
-      <h1>Vörur í körfu</h1>
+      <h2>Vörur í körfu</h2>
 
-      <div class="grid">
+      <div class="cart">
 
-        <div class="grid__row">
-          <div class="grid__image">
+        <div class="cart__row">
+          <div class="cart__image">
             <img class="image__image" src="../img/watch.jpg" alt="Ótrúlegt úr">
           </div>
-          <div class="grid__col">
-            <div class="grid__text">
-              <h1>Ótrúlegt úr</h1>
+          <div class="cart__col">
+            <div class="cart__text">
+              <h2>Ótrúlegt úr</h2>
               <p>Hvað er klukkan? Þetta úr mun svara því hvenær sem er.</p>
             </div>
-            <div class="grid__buy">
-              <h2>99.900 kr.-</h2>
+            <div class="cart__buy">
+              <h3>99.900 kr.-</h3>
               <p>Fjöldi:</p>
-              <div class="grid__form">
+              <div class="cart__form">
                 <input type="text" value="1" class="form__text"> 
                 <input type="submit" value="&#x1F6D2; Uppfæra" class="form__button">
                 <input type="submit" value="&#x1F6D2; Eyða úr körfu" class="form__button"> 
@@ -35,19 +50,19 @@
           </div>
         </div>
 
-        <div class="grid__row">
-          <div class="grid__image">
+        <div class="cart__row">
+          <div class="cart__image">
             <img class="image__image" src="../img/headphones.jpg" alt="Hágæða heyrnartól">
           </div>
-          <div class="grid__col">
-            <div class="grid__text">
-              <h1>Hágæða heyrnartól</h1>      
+          <div class="cart__col">
+            <div class="cart__text">
+              <h2>Hágæða heyrnartól</h2>      
               <p>Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnartólum. Höfum við minnst á að þau eru hágæða?</p>
             </div>
-            <div class="grid__buy">
-                <h2>39.999 kr.-</h2>
+            <div class="cart__buy">
+                <h3>39.999 kr.-</h3>
                 <p>Fjöldi:</p>
-                <div class="grid__form">
+                <div class="cart__form">
                   <input type="text" value="2" class="form__text">
                   <button class="form__button">&#x1F6D2; Uppfæra</button>
                   <!--<input type="submit" value="&#x1F6D2; Uppfæra" class="form__object">-->
@@ -57,10 +72,10 @@
           </div>
         </div>
 
-        <div class="grid__row2">
-          <div class="grid__col2">
-            <h1>Sendingarupplýsingar</h1>  
-            <div class="grid__form2">
+        <div class="cart__row2">
+          <div class="cart__col2">
+            <h2>Sendingarupplýsingar</h2>  
+            <div class="cart__form2">
               <div class="form2__labels">
                   <label>Nafn: </label>
                   <label>Heimilisfang: </label>
@@ -257,9 +272,9 @@
 
             </div>
           </div>
-          <div class="grid__col2">
-            <h1>Greiðsluupplýsingar</h1>
-            <div class="grid__form2">
+          <div class="cart__col2">
+            <h2>Greiðsluupplýsingar</h2>
+            <div class="cart__form2">
               <div class="form2__labels">
                   <label>Kortanúmer: </label>
                   <label>Korthafi: </label>
@@ -301,7 +316,7 @@
           </div>
         </div>
 
-        <div class="grid__row">
+        <div class="cart__row">
           <div class="buybutton">
             <button class="buybutton__button">Kaupa</button>  
           </div>  
@@ -310,5 +325,59 @@
       </div>
 
     </main>
+    <footer>
+        <div class="footer__content">
+          <div class="footer__col">
+            <div class="footer__title">
+              <h3>Vöruflokkar</h3>
+            </div>
+              <ul class="footer__list">
+                <li><a href="pages/products.html">Nauðsynjavörur</a></li>
+                <li><a href="pages/products.html">Frábærar vörur</a></li>
+                <li><a href="pages/products.html">Ómissandi vörur</a></li>
+                <li><a href="pages/products.html">Ótrúlegar vörur</a></li>
+                <li><a href="pages/products.html">Magnaðar vörur</a></li>
+              </ul>
+          </div>
+          <div class="footer__col">
+            <div class="footer__title">
+              <h3>Vöruflokkar</h3>
+            </div>
+              <ul class="footer__list">
+                <li><a href="pages/products.html">Trylltar vörur</a></li>
+                <li><a href="pages/products.html">Geggjaðar vörur</a></li>
+                <li><a href="pages/products.html">Svakalegar vörur</a></li>
+                <li><a href="pages/products.html">Fáránlegar vörur</a></li>
+                <li><a href="pages/products.html">Klikkaðar vörur</a></li>
+              </ul>
+          </div>
+          <div class="footer__col">
+            <div class="footer__title">
+              <h3>Vöruflokkar</h3>
+            </div>
+              <ul class="footer__list">
+                <li><a href="pages/products.html">Nýjar vörur</a></li>
+                <li><a href="pages/products.html">Gamlar vörur</a></li>
+                <li><a href="pages/products.html">Skrítnar vörur</a></li>
+              </ul>
+          </div>
+          <div class="footer__col">
+            <div class="footer__title">
+              <h3>Síður</h3>
+            </div>
+              <ul  class="footer__list">
+                <li><a href="pages/products.html">Allar vörur</a></li>
+                <li><a href="pages/staff.html">Starfsfólk</a></li>
+                <li><a href="pages/cart.html">Karfa</a></li>
+              </ul>
+          </div>
+      </div>
+    
+        <div class="footer__copyright">
+          <p>© 2018 Vöruhúsið</p>
+        </div>
+    
+    
+      </footer>
   </body>
 </html>

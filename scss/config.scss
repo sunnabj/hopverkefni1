@@ -19,11 +19,12 @@ $transition: 300ms ease-in-out;
 
 
 
+
 @mixin row() {
     display: flex;
 }
 
-@mixin columns() {
+@mixin columns($col: 1) {
     //margföldum með 1% til að breyta gildi í % gildi
     width: ($col /12 * 100)*1%;
 
