@@ -54,9 +54,12 @@
 .face.back {
     display: block;
     transform: rotateY(180deg); /* sjáum ekki bakhliðina strax */
-    font-size: 26px; //Leturstærð stjórnar stærð á myndum.
-    /*position: relative;*/
-    /*position: absolute;*/
+    font-size: 1.5em; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
 .staff__image {
