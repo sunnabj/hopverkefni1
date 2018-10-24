@@ -2,74 +2,69 @@
 
 .cart__row {
   display: flex;
-  flex-direction: column;
   width: 100%;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 40px;
   margin-top: 40px;
+  margin-bottom: 40px;
+  flex-direction: column;
 
   @media (min-width: 750px) {
-      flex-direction: row;
-      margin-left: -10px;
+    margin-left: -10px;
+    flex-direction: row;
   }
   @media (min-width: 1200px) {
-      margin-left: -20px;
+    margin-left: -20px;
   }
 }
-.cart__row2 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    margin-left: 0px;
-    margin-right: 0px;
 
-    @media (min-width: 750px) {
-        flex-direction: row;
-    }
-    @media (min-width: 1200px) {
-        padding-left: 17%;
-    }
+.cart__row2 {
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  flex-direction: column;
+
+  @media (min-width: 750px) {
+    flex-direction: row;
+  }
+  @media (min-width: 1200px) {
+    padding-left: 17%;
+  }
 }
 
 .cart__col {
+  display: flex;
   width: 100%;
-  display:flex;
   flex-direction: column;
   justify-content: space-between;
 
   @media (min-width: 750px) {
-      margin-left: 20px;
+    margin-left: 20px;
   }
   @media (min-width: 1200px) {
-      margin-left: 25px;
+    margin-left: 25px;
   }
 }
-.cart__col2 {
-    width: 100%;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
 
-    @media (min-width: 750px) {
-        @include columns(6);
-    }
-    @media (min-width: 1200px) {
-        @include columns(5);
-    }
+.cart__col2 {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: 750px) {
+    @include columns(6);
   }
+  @media (min-width: 1200px) {
+    @include columns(5);
+  }
+}
 
 .cart__image {
-  padding-right: 0px;
-  padding-left: 0px;
   max-width: 100%;
 
   @media (min-width: 750px) {
-      @include columns(6);
-      padding-right: 10px;
-      padding-left: 10px;
+    @include columns(6);
+    padding-left: 10px;
   }
   @media (min-width: 1200px) {
     padding-left: 0px;
@@ -80,89 +75,91 @@
   max-width: 100%;
 
   @media (min-width: 750px) {
-      max-height: 100%;
+    max-height: 100%;
   }
 }
 
 .cart__form {
-    display: flex;
-    flex-direction: row;
-    height: 30px;
+  display: flex;
+  height: 30px;
+  flex-direction: row;
+
 }
 
 .form__text {
-    @include columns(4);
+  @include columns(4);
 
-    @media (min-width: 750px) {
-        width: 100px;
-    }
+  @media (min-width: 750px) {
+    width: 100px;
+  }
 }
-.form__button {
-    margin-right: 5px;
-    margin-left: 5px;
-    background-color: $color-2;
-    color: $color-1;
-    border: solid 1px $color-3;
-    border-radius: 2px;
-    transition: background-color $transition;
-    height: 100%;
-    width: 120px;
 
-    &:hover {
-      background-color: $color-6;
-      border-color: $color-6; 
-    }
+.form__button {
+  width: 120px;
+  height: 100%;
+  margin-right: 5px;
+  margin-left: 5px;
+  color: $color-1;
+  background-color: $color-2;
+  border: solid 1px $color-3;
+  border-radius: 2px;
+  transition: background-color $transition;
+
+  &:hover {
+    background-color: $color-6;
+    border-color: $color-6;
+  }
+
 }
 
 .cart__form2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .form2__labels {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .form2__choose {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    @include columns(8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  @include columns(8);
 }
 
 .choose__information {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
-    padding: 0px;
-    margin: 10px;
-    height: 30px;
+  display: flex;
+  height: 30px;
+  margin: 10px;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .buybutton {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
 
-    &__button {
-        width: 250px;
-        border-style: solid;
-        border-color: $color-6;
-        border-width: 5px;
-        border-radius: 4px;
-        background-color:$color-6;
-        color: $color-1;
-        transition: background-color $transition, border-color $transition;
+  &__button {
+    width: 250px;
+    color: $color-1;
+    background-color: $color-6;
+    border-color: $color-6;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 4px;
+    transition: background-color $transition, border-color $transition;
 
-        &:hover {
-          color: $color-6;
-          border-color: $color-1;
-          background-color: $color-1;   
-        }
+    &:hover {
+      color: $color-6;
+      background-color: $color-1;
+      border-color: $color-1;
     }
-}
 
+  }
+}

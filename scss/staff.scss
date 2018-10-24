@@ -1,67 +1,74 @@
 @import "config.scss";
 
 .stcards {
-    display: flex;
+
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: column;
+
+  &__row {
+    @include row();
+
     flex-direction: column;
-    margin-bottom: 20px;
 
-    &__row {
-        @include row(); 
-        flex-direction: column;
+    @media (min-width: 750px) {
+      flex-direction: row;
+    }
+  }
 
-        @media (min-width: 750px) {
-            flex-direction: row;
-        } 
+  &__col {
+    @include columns(12);
+
+    @media (min-width: 750px) {
+      @include columns(6);
     }
 
-    &__col {
-        @include columns(12);
-
-        @media (min-width: 750px) {
-            @include columns(6);
-        }
-
-        &:hover .stcard {
-            transform: rotateY(180deg);
-        }      
+    &:hover .stcard {
+      transform: rotateY(180deg);
     }
+
+  }
 }
 
 .stcard {
-    transform-style: preserve-3d; /* stackast í þrívídd */
-    transition: $transition;
-    position: relative;
-    height: 100%;
-    margin-top: 20px;
-    &::before {
-        display: block;
-        padding-top: 150%;
-        content: "";
-    }
+  position: relative;
+  height: 100%;
+  margin-top: 20px;
+  transition: $transition;
+  transform-style: preserve-3d; /* stackast í þrívídd */
+
+  &::before {
+    display: block;
+    padding-top: 150%;
+    content: "";
+  }
 }
 
 .face {
-    backface-visibility: hidden; /* ekki sýna það sem er á bakvið */
-    position: absolute; 
-    top: 0; right: 0; bottom: 0; left: 0; 
+  backface-visibility: hidden; /* ekki sýna það sem er á bakvið */
+  position: absolute;
 
-    &.front {
-        height: 100%;
-        position: absolute;
-        height: 100%;
-    }
-    &.back {
-        display: block;
-        transform: rotateY(180deg); /* sjáum ekki bakhliðina strax */
-        font-size: 1.5em; 
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  &.front {
+    position: absolute;
+    height: 100%;
+  }
+
+  &.back {
+    display: flex;
+    padding: 20px;
+    font-size: 1.5em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg); /* sjáum ekki bakhliðina strax */
+  }
 }
 
 .staff__image {
-    max-width: 100%;
+  max-width: 100%;
 }
