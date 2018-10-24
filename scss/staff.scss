@@ -4,26 +4,27 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-}
 
-.stcards__row {
-    @include row(); 
-    flex-direction: column;
+    &__row {
+        @include row(); 
+        flex-direction: column;
 
-    @media (min-width: 750px) {
-        flex-direction: row;
+        @media (min-width: 750px) {
+            flex-direction: row;
+        } 
     }
-}
-.stcards__col {
-    @include columns(12);
 
-    @media (min-width: 750px) {
-        @include columns(6);
-    }    
-}
+    &__col {
+        @include columns(12);
 
-.stcards__col:hover .stcard {
-    transform: rotateY(180deg);
+        @media (min-width: 750px) {
+            @include columns(6);
+        }
+
+        &:hover .stcard {
+            transform: rotateY(180deg);
+        }      
+    }
 }
 
 .stcard {
@@ -40,33 +41,27 @@
 }
 
 .face {
-    /*height: 100%;*/
-    /*max-width: 100%;*/
     backface-visibility: hidden; /* ekki sýna það sem er á bakvið */
-    position: absolute; //breytt úr relative
-    top: 0; right: 0; bottom: 0; left: 0; //nýtt
-}
-.face.front {
-    height: 100%;
-    position: absolute;
-    height: 100%;
-}
+    position: absolute; 
+    top: 0; right: 0; bottom: 0; left: 0; 
 
-.face.back {
-    display: block;
-    transform: rotateY(180deg); /* sjáum ekki bakhliðina strax */
-    font-size: 1.5em; 
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+    &.front {
+        height: 100%;
+        position: absolute;
+        height: 100%;
+    }
+    &.back {
+        display: block;
+        transform: rotateY(180deg); /* sjáum ekki bakhliðina strax */
+        font-size: 1.5em; 
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 .staff__image {
-    /*@include columns(12);*/
     max-width: 100%;
 }
-
-
-

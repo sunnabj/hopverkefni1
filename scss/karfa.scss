@@ -1,44 +1,87 @@
 @import "config.scss";
 
 .cart__row {
-  @include row();
+  display: flex;
   flex-direction: column;
   width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-bottom: 40px;
   margin-top: 40px;
+
+  @media (min-width: 750px) {
+      flex-direction: row;
+      margin-left: -10px;
+  }
+  @media (min-width: 1200px) {
+      margin-left: -20px;
+  }
 }
 .cart__row2 {
-    @include row();
+    display: flex;
     flex-direction: column;
     width: 100%;
     margin-bottom: 40px;
     margin-top: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    @media (min-width: 750px) {
+        flex-direction: row;
+    }
+    @media (min-width: 1200px) {
+        padding-left: 17%;
+    }
 }
 
 .cart__col {
   width: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
   display:flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (min-width: 750px) {
+      margin-left: 20px;
+  }
+  @media (min-width: 1200px) {
+      margin-left: 25px;
+  }
 }
 .cart__col2 {
     width: 100%;
-    padding-right: 10px;
-    padding-left: 10px;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (min-width: 750px) {
+        @include columns(6);
+    }
+    @media (min-width: 1200px) {
+        @include columns(5);
+    }
   }
 
 .cart__image {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 0px;
+  padding-left: 0px;
   max-width: 100%;
+
+  @media (min-width: 750px) {
+      @include columns(6);
+      padding-right: 10px;
+      padding-left: 10px;
+  }
+  @media (min-width: 1200px) {
+    padding-left: 0px;
+  }
 }
+
 .image__image {
   max-width: 100%;
+
+  @media (min-width: 750px) {
+      max-height: 100%;
+  }
 }
 
 .cart__form {
@@ -48,7 +91,11 @@
 }
 
 .form__text {
-    width: 100px;
+    @include columns(4);
+
+    @media (min-width: 750px) {
+        width: 100px;
+    }
 }
 .form__button {
     margin-right: 5px;
@@ -83,7 +130,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /*width: 75%;*/
     @include columns(8);
 }
 
@@ -101,106 +147,22 @@
     justify-content: center;
     padding: 10px;
     width: 100%;
+
+    &__button {
+        width: 250px;
+        border-style: solid;
+        border-color: $color-6;
+        border-width: 5px;
+        border-radius: 4px;
+        background-color:$color-6;
+        color: $color-1;
+        transition: background-color $transition, border-color $transition;
+
+        &:hover {
+          color: $color-6;
+          border-color: $color-1;
+          background-color: $color-1;   
+        }
+    }
 }
-.buybutton__button {
-    border-style: solid;
-    border-color: $color-6;
-    border-width: 5px;
-    /*border-right-width: 60px;
-    border-left-width: 60px;*/
-    width: 250px;
-    border-radius: 4px;
-    background-color:$color-6;
-    color: $color-1;
-    transition: background-color $transition, border-color $transition;
 
-    &:hover {
-      color: $color-6;
-      border-color: $color-1;
-      background-color: $color-1;  
-    }
-}
-
-
-  @media (max-width: 749px) {
-    
-    /*main {
-        padding: 10px;
-    }*/
-
-    .cart__row {
-        margin-left: 0px;
-        margin-right: 0px;
-        padding-left: 0px;
-        padding-right: 0px;
-        width: 100%;
-    }
-    .cart__row2 {
-        margin-left: 0px;
-        margin-right: 0px;
-        padding-left: 0px;
-        padding-right: 0px;
-        width: 100%;
-    }
-    .cart__image {
-        margin-left: 0px;
-        margin-right: 0px;
-        padding-right: 0px;
-        padding-left: 0px;
-        width: 100%
-    }
-    .cart__col {
-        padding: 0px;
-        margin: 0px;
-        width: 100%;
-    }
-    .cart__col2 {
-        padding: 0px;
-        margin: 0px;
-        width: 100%;
-    }
-    .form__text {
-        /*width: 33.33333%;*/
-        @include columns(4);
-    }
-
-    .form2__choose {
-        padding-left: 0px;
-    }
-  
-  }
-
-  @media (min-width: 750px) {
-    
-    .cart__row {
-        flex-direction: row;
-    }
-    .cart__row2 {
-        flex-direction: row;
-    }
-    .cart__col2 {
-        @include columns(6);
-    }
-    .cart__image {
-        /*width: 50%;*/
-        @include columns(6);
-    }
-    .image__image {
-        max-width: 100%;
-        max-height: 100%;
-    }
-  }
-
-  @media (min-width: 1200px) {
-    .cart__col2 {
-        @include columns(5);
-    }
-    .cart__row2 {
-        padding-left: 200px;
-    }
-    
-    .cart__image {
-        margin-left: 0px;
-        padding-left: 0px;
-    }
-  }
