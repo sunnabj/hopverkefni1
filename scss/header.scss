@@ -2,29 +2,32 @@
 
   header{
     background-color: $color-3;
+  
+
   }
   .header__title{
     display: flex;
     justify-content: center;
-    font-family: 'Oswald', Verdana, serif;
+    font-family: $font-heading;
     margin-bottom: 20px;
   }
   .header__content{
     display: flex;
-    font-family: 'Open sans', Helvetica, Arial, sans-serif;
+    font-family: $font-main;
     justify-content: center;
     flex-direction: column;
     @include columns (12);
-    padding-bottom: 20px;
-      
-      
-      
-      a{
-        color: $color-1;
-        text-decoration: none;
+    padding-bottom: 20px;  
+    margin: 0 auto;
+    max-width: $max-width;
+    
+    a{
+      color: $color-1;
+      text-decoration: none;
 
       &:hover{
         color: $color-2;
+        transition: color $transition;
       }
     }
   }
@@ -48,16 +51,21 @@
   @media(min-width: 501px){
     .header__content{ 
       flex-direction: row;
-      justify-content: flex-end;
-  
+      justify-content: flex-end;  
+      position: relative;
     }
     .header__sites{
       max-width: 300px;
-      margin: auto;
+      margin: 0 auto;
       display: flex;
       flex: 1;
     }
 
+    .header__cart{
+      display: flex;
+      position: absolute;
+
+    }
   }
   
   
