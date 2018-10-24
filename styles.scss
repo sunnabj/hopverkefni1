@@ -22,32 +22,28 @@
 html { /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
-  // TODO fleiri grunn stillingar
-
 }
 
-main {
-  margin: 0 auto;
+main { /* stylelint-disable-line */
   max-width: $max-width;
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
   font-family: $font-main;
-  /*font-family: "Open Sans", Arial, sans-serif;*/
   font-size: 16px;
 }
 
-h1 {
-  /*font-family: 'Oswald', Verdana, serif;*/
+h1 { /* stylelint-disable-line */
   font-family: $font-heading;
   font-size: 3em;
 }
 
-h2 {
+h2 { /* stylelint-disable-line */
   font-family: $font-heading;
-  font-weight: bold;
   font-size: 2.5em;
+  font-weight: bold;
 }
-h3 {
+h3 { /* stylelint-disable-line */
   font-family: $font-heading;
   font-size: 2em;
 }

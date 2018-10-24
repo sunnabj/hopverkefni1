@@ -7,7 +7,8 @@
     "sass-watch": "node-sass --source-map-embed --watch styles.scss styles.css",
     "browser-sync": "browser-sync start --server --files index.html styles.css",
     "dev": "npm-run-all --parallel sass-watch browser-sync",
-    "lint": "stylelint styles.scss --syntax scss"
+    "lint-css": "stylelint styles.css --syntax css",
+    "lint-scss": "stylelint styles.scss --syntax scss"
   },
   "author": "",
   "license": "ISC",
