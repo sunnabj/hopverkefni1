@@ -3,7 +3,7 @@
 .stcards {
 
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: $gutter;
   flex-direction: column;
 
   &__row {
@@ -33,7 +33,7 @@
 .stcard {
   position: relative;
   height: 100%;
-  margin-top: 20px;
+  margin-top: $gutter;
   transition: $transition;
   transform-style: preserve-3d; /* stackast í þrívídd */
 
@@ -60,7 +60,7 @@
 
   &.back {
     display: flex;
-    padding: 20px;
+    padding: $gutter;
     font-size: 1.5em;
     flex-direction: column;
     justify-content: center;
