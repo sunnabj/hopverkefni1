@@ -1,5 +1,7 @@
 
-## Keyrsla á verkefni ##
+# Upplýsingar um verkefni #
+
+## Keyrsla ##
 
 Til að keyra verkefnið þarf að gera eftirfarandi skipanir:
 
@@ -14,7 +16,7 @@ Til að keyra stylelint þarf:
 npm run lint-scss
 ```
 
-## Skipulag verkefnis ##
+## Skipulag ##
 
 ### HTML ###
 
@@ -61,7 +63,7 @@ en importar síðan nokkrum aðskildum scss skrám með útlitsstillingar fyrir 
 * node_modules inniheldur uppsett npm tæki og tól
 * package.json inniheldur scripts til að keyra tól eins og sass-watch og stylelint
 
-## Upplýsingar um hönnuði ##
+## Hönnuðir ##
 
 * _Sunna Björnsdóttir_
     * Tölvupóstfang: sub4@hi.is
