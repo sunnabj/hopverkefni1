@@ -19,25 +19,25 @@
 .index__content {
   margin-bottom: 30px;
 
-  p {
+  p { /* stylelint-disable-line */
     margin-bottom: 20px;
   }
 
-  h2 {
+  h2 { /* stylelint-disable-line */
     margin-bottom: 20px;
   }
 }
 
 .index__button {
 
+  width: 120px;
+  height: 30px;
+  font-size: 12px;
   color: $color-1;
   background-color: $color-6;
   border: solid 1px $color-6;
   border-radius: 2px;
-  width: 120px;
-  height: 30px;
   transition: background-color $transition;
-  font-size: 12px;
   @include columns(8);
 }
 
@@ -48,13 +48,11 @@
 }
 
 @media (min-width: 501px) {
-
   .index__cards {
     flex-wrap: wrap;
 
     .index__card:nth-of-type(2) {
-
-      .index__content {
+      .index__content { /* stylelint-disable-line */
         order: 1;
       }
     }
@@ -62,20 +60,20 @@
 
   .index__card {
     display: flex;
-    flex-direction: row; 
-    margin-top: 15px;
-    align-items: center;
-    
-    @include columns (12);
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
+    margin-top: 15px;
+    flex-direction: row;
+    align-items: center;
+
+    @include columns (12);
   }
 
   .index__content {
-    @include columns(6);     
+    @include columns(6);
   }
 
   .index__image {
-    @include columns(6);    
+    @include columns(6);
   }
 }

@@ -1,70 +1,69 @@
 @import "config";
 
-header{
+header { /* stylelint-disable-line */
   background-color: $color-3;
 }
 
-.header__title{
+.header__title {
   display: flex;
   justify-content: center;
-  font-family: $font-heading;
   margin-bottom: 20px;
+  font-family: $font-heading;
 }
 
-.header__content{
+.header__content {
   display: flex;
+  max-width: $max-width;
+  padding-bottom: 20px;
+  margin: 0 auto;
   font-family: $font-main;
   justify-content: center;
   flex-direction: column;
   @include columns (12);
-  padding-bottom: 20px;  
-  margin: 0 auto;
-  max-width: $max-width;
-  
-  a{
+
+  a {
     color: $color-1;
     text-decoration: none;
 
-    &:hover{
+    &:hover { /* stylelint-disable-line */
       color: $color-2;
       transition: color $transition;
     }
   }
 }
 
-.header__sites{
-  text-transform: uppercase;
+.header__sites {
   display: flex;
-  justify-content: space-around;
   margin-bottom: 10px;
+  text-transform: uppercase;
+  justify-content: space-around;
 
-  a{
+  a { /* stylelint-disable-line */
     font-weight: bold;
   }
 }
 
-.header__cart{
+.header__cart {
   display: flex;
   justify-content: center;
 }
 
-@media(min-width: 501px){
-  .header__content{ 
-    flex-direction: row;
-    justify-content: flex-end;  
+@media (min-width: 501px) {
+  .header__content {
     position: relative;
+    flex-direction: row;
+    justify-content: flex-end;
   }
-  
-  .header__sites{
+
+  .header__sites {
+    display: flex;
     max-width: 300px;
-    margin: 0 auto;
-    display: flex;
     flex: 1;
+    margin: 0 auto;
   }
 
-  .header__cart{
-    display: flex;
+  .header__cart {
     position: absolute;
-
+    display: flex;
   }
 }
