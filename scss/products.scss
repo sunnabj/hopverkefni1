@@ -38,6 +38,10 @@
     }
 }
 
+.product__description {
+  display: flex;
+  flex-grow: 1;
+}
 
 .product__image {
   padding-right: 0px;
