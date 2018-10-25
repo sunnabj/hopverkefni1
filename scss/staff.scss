@@ -45,7 +45,7 @@
 }
 
 .face {
-  backface-visibility: hidden; /* ekki sýna það sem er á bakvið */
+  backface-visibility: hidden; /* Bakhliðin er falin */
   position: absolute;
 
   top: 0;
@@ -65,7 +65,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: rotateY(180deg); /* sjáum ekki bakhliðina strax */
+    transform: rotateY(180deg); /* bakhliðin sést ekkistrax */
   }
 }
 
