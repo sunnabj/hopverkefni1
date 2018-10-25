@@ -1,45 +1,50 @@
 @import "config";
 
-footer{
+footer { /* stylelint-disable-line */
+  font-family: $font-main;
   background-color: $color-6;
-  font-family: 'Open sans', Helvetica, Arial, sans-serif;   
+
 }
 
-.footer__content{
+.footer__content {
   display: flex;
+  max-width: $max-width;
+  margin: 0 auto;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0 auto;
-  max-width: $max-width;
 }
 
-.footer__col{
+.footer__col {
   display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
   flex-direction: column;
   @include columns(6);
-  margin-bottom: 10px;
-  margin-top: 10px;
 }
 
-@media(min-width: 1000px){
-  .footer__col{
+@media (min-width: 1000px) {
+  .footer__col {
     @include columns(3);
-    }
+  }
 }
 
-.footer__list{   
+.footer__list {
+
   list-style: none;
-  a{
+
+  a {
     color: $color-2;
-    text-decoration: none;   
-    &:hover{
+    text-decoration: none;
+    transition: color $transition;
+
+    &:hover { /* stylelint-disable-line */
       color: $color-1;
-      transition: color $transition;
     }
-  }    
+
+  }
 }
 
-.footer__copyright{
+.footer__copyright {
   display: flex;
   justify-content: center;
 }
