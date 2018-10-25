@@ -1,78 +1,81 @@
 @import "config";
 
-.index__cards{
-    display: flex;
+.index__cards {
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+.index__card {
+  @include columns(12);
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.index__img {
+  width: 100%;
+}
+
+.index__content {
+  margin-bottom: 30px;
+
+  p {
     margin-bottom: 20px;
-    flex-direction: column;
-}
-.index__card{
-    @include columns(12);
-    padding-right: 0;
-    padding-left: 0;
-}
-.index__img{
-    width: 100%;
-}
-.index__content{
-    margin-bottom: 30px;
-    p{
-        margin-bottom: 20px;
-    }
-    h2{
-        margin-bottom: 20px;
-    }
-}
+  }
 
-
+  h2 {
+    margin-bottom: 20px;
+  }
+}
 
 .index__button {
-    background-color: $color-6;
-    color: $color-1;
-    border: solid 1px $color-6;
-    border-radius: 2px;
-    transition: background-color $transition;
-    height: 30px;
-    width: 120px;
-    font-size: 12px;
 
-    @include columns(8);
+  color: $color-1;
+  background-color: $color-6;
+  border: solid 1px $color-6;
+  border-radius: 2px;
+  width: 120px;
+  height: 30px;
+  transition: background-color $transition;
+  font-size: 12px;
+  @include columns(8);
 }
 
 .index__button:hover {
-    background-color: $color-1;
-    border-color: $color-1;
-    color: $color-6;
-}
-@media(min-width: 501px){
-  
-    .index__cards{
-       flex-wrap: wrap;
-
-        .index__card:nth-of-type(2){
-            .index__content{
-                order: 1;
-            }
-        }
-    
-    }
-    .index__card{
-        display: flex;
-        flex-direction: row; 
-        margin-top: 15px;
-        align-items: center;
-        
-        @include columns (12);
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .index__content{
-        @include columns(6);
-        
-    }
-    .index__image{
-        @include columns(6);
-       
-    }
+  color: $color-6;
+  background-color: $color-1;
+  border-color: $color-1;
 }
 
+@media (min-width: 501px) {
+
+  .index__cards {
+    flex-wrap: wrap;
+
+    .index__card:nth-of-type(2) {
+
+      .index__content {
+        order: 1;
+      }
+    }
+  }
+
+  .index__card {
+    display: flex;
+    flex-direction: row; 
+    margin-top: 15px;
+    align-items: center;
     
+    @include columns (12);
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .index__content {
+    @include columns(6);     
+  }
+
+  .index__image {
+    @include columns(6);    
+  }
+}
