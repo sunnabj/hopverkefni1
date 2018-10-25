@@ -3,24 +3,24 @@
 .cart__row {
   display: flex;
   width: 100%;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 2 * $gutter;
+  margin-bottom: 2 * $gutter;
   flex-direction: column;
 
   @media (min-width: 750px) {
-    margin-left: -10px;
+    margin-left: -($gutter / 2);
     flex-direction: row;
   }
   @media (min-width: 1200px) {
-    margin-left: -20px;
+    margin-left: -$gutter;
   }
 }
 
 .cart__row2 {
   display: flex;
   width: 100%;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 2 * $gutter;
+  margin-bottom: 2 * $gutter;
   flex-direction: column;
 
   @media (min-width: 750px) {
@@ -38,10 +38,10 @@
   justify-content: space-between;
 
   @media (min-width: 750px) {
-    margin-left: 20px;
+    margin-left: $gutter;
   }
   @media (min-width: 1200px) {
-    margin-left: 25px;
+    margin-left: 1.5 * $gutter;
   }
 }
 
@@ -64,7 +64,7 @@
 
   @media (min-width: 750px) {
     @include columns(6);
-    padding-left: 10px;
+    padding-left: $gutter / 2;
   }
   @media (min-width: 1200px) {
     padding-left: 0;
@@ -95,10 +95,10 @@
 }
 
 .form__button {
-  width: 120px;
+  width: 6 * $gutter;
   height: 100%;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin-right: ($gutter / 4);
+  margin-left: $gutter / 4;
   color: $color-1;
   background-color: $color-2;
   border: solid 1px $color-3;
@@ -134,7 +134,7 @@
 .choose__information {
   display: flex;
   height: 30px;
-  margin: 10px;
+  margin: $gutter / 2;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -143,10 +143,10 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 10px;
+  padding: $gutter / 2;
 
   &__button {
-    width: 250px;
+    width: 12.5 * $gutter;
     color: $color-1;
     background-color: $color-6;
     border-color: $color-6;

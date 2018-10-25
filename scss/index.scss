@@ -37,7 +37,7 @@
   background-color: $color-6;
   border: solid 1px $color-6;
   border-radius: 2px;
-  transition: background-color $transition;
+  transition: background-color $transition, border-color $transition;
   @include columns(8);
 }
 
