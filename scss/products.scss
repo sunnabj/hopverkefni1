@@ -77,13 +77,6 @@
 .product__form{
     flex-direction: row;
 }
-.product__label {
-    @include columns(4);
-
-    @media(min-width: 750px) {
-        width: 100px;
-    }
-}
 
 .product__input {
     @include columns(4);
