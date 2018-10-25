@@ -41,7 +41,8 @@
     margin-left: $gutter;
   }
   @media (min-width: 1200px) {
-    margin-left: 1.5 * $gutter;
+    padding-left: $gutter / 2;
+    margin-left: $gutter;
   }
 }
 
@@ -67,6 +68,9 @@
     padding-left: $gutter / 2;
   }
   @media (min-width: 1200px) {
+    padding-right: 0;
+  }
+  @media (min-width: 1240px) {
     padding-left: 0;
   }
 }
@@ -95,10 +99,9 @@
 }
 
 .form__button {
-  width: 6 * $gutter;
+  width: 120px;
   height: 100%;
-  margin-right: ($gutter / 4);
-  margin-left: $gutter / 4;
+  margin-left: $gutter / 2;
   color: $color-1;
   background-color: $color-2;
   border: solid 1px $color-3;
@@ -146,7 +149,7 @@
   padding: $gutter / 2;
 
   &__button {
-    width: 12.5 * $gutter;
+    width: 250px;
     color: $color-1;
     background-color: $color-6;
     border-color: $color-6;
