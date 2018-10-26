@@ -1,5 +1,3 @@
-
-// TODO sækja allar sass skrár
 @import "scss/index.scss";
 @import "scss/karfa.scss";
 @import "scss/products.scss";
@@ -39,6 +37,7 @@ h1 { /* stylelint-disable-line */
 }
 
 h2 { /* stylelint-disable-line */
+  margin-bottom: $gutter;
   font-family: $font-heading;
   font-size: 2.25em;
   font-weight: bold;
@@ -46,10 +45,6 @@ h2 { /* stylelint-disable-line */
 h3 { /* stylelint-disable-line */
   font-family: $font-heading;
   font-size: 1.5em;
-}
-h4 { /* stylelint-disable-line */
-  font-family: $font-heading;
-  font-size: 1.3125em;
 }
 h4 { /* stylelint-disable-line */
   font-family: $font-heading;

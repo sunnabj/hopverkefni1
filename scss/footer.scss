@@ -16,8 +16,8 @@ footer { /* stylelint-disable-line */
 
 .footer__col {
   display: flex;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: $gutter / 2;
+  margin-bottom: $gutter / 2;
   flex-direction: column;
   @include columns(6);
 }

@@ -7,14 +7,14 @@ header { /* stylelint-disable-line */
 .header__title {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: $gutter;
   font-family: $font-heading;
 }
 
 .header__content {
   display: flex;
   max-width: $max-width;
-  padding-bottom: 20px;
+  padding-bottom: $gutter;
   margin: 0 auto;
   font-family: $font-main;
   justify-content: center;
@@ -34,7 +34,7 @@ header { /* stylelint-disable-line */
 
 .header__sites {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: $gutter / 2;
   text-transform: uppercase;
   justify-content: space-around;
 

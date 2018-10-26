@@ -2,7 +2,7 @@
 
 .index__cards {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: $gutter;
   flex-direction: column;
 }
 
@@ -17,15 +17,12 @@
 }
 
 .index__content {
-  margin-bottom: 30px;
+  margin-bottom: $gutter;
 
   p { /* stylelint-disable-line */
-    margin-bottom: 20px;
+    margin-bottom: $gutter;
   }
 
-  h2 { /* stylelint-disable-line */
-    margin-bottom: 20px;
-  }
 }
 
 .index__button {
@@ -62,7 +59,7 @@
     display: flex;
     padding-right: 0;
     padding-left: 0;
-    margin-top: 15px;
+    margin-top: $gutter;
     flex-direction: row;
     align-items: center;
 
